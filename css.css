@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(105, 105, 105);
+    overflow-y: hidden;
+}
+
+.area-game {
+    margin: 250px auto;
+    height: 200px;
+    width: 600px;
+    background-image: url(./image/b.png);
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.player {
+    width: 110px;
+    position: absolute;
+    display: none;
+    margin-left: -40px;
+    bottom: 0px;
+}
+
+.player-area {
+    width: 30px;
+    position: absolute;
+    height: 32px;
+    bottom: 0px;
+    left: 20px;
+}
+
+.collisine_area {
+    width: 30px;
+    position: absolute;
+    height: 34px;
+    bottom: 16px;
+    left: 1px;
+}
+
+.player2 {
+    width: 110px;
+    position: absolute;
+    left: 0;
+    display: block;
+    margin-left: -40px;
+    bottom: -8px;
+}
+
+.wall {
+    position: absolute;
+    bottom: -13px;
+    width: 45px;
+}
+
+.over {
+    position: relative;
+}
+
+.score {
+    position: absolute;
+}
+
+.score #score {
+    color: honeydew;
+    font-size: 18px;
+    padding: 8px;
+    cursor: not-allowed;
+}
+
+#gameover {
+    display: none;
+}
+
+#replay {
+    background-color: transparent;
+    border: none;
+    width: 37px;
+    height: 37px;
+    background-image: url("image/ReplayBtn.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 263px;
+    cursor: pointer;
+}
